@@ -27,7 +27,7 @@ public class Pez extends Animal{
 		return(this.colorEscamas);
 	}
 	
-	public int cantidadAletas() {
+	public int getCantidadAletas() {
 		return(this.cantidadAletas);
 	}
 	
