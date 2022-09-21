@@ -11,7 +11,7 @@ public class Reptil extends Animal{
 	
 	//constructor
 	public Reptil() {
-		
+		listado.add(this);
 	}
 	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
 		this.setNombre(nombre);
@@ -20,6 +20,7 @@ public class Reptil extends Animal{
 		this.setGenero(genero);
 		this.colorEscamas = colorEscamas;
 		this.largoCola = largoCola;
+		listado.add(this);
 	}
 	//metodos get
 	public String getColorEscamas() {
@@ -51,14 +52,12 @@ public class Reptil extends Animal{
 	
 	public static Reptil crearIguana(String nombre, int edad, String genero) {
 		Reptil iguana = new Reptil(nombre, edad, "humedal", genero, "verde", 3);
-		listado.add(iguana);
 		iguanas++;
 		return(iguana);
 	}
 	
 	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 		Reptil serpiente = new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
-		listado.add(serpiente);
 		serpientes++;
 		return(serpiente);
 	}

@@ -11,7 +11,7 @@ public class Pez extends Animal{
 	
 	//constructor
 	public Pez() {
-		
+		listado.add(this);
 	}
 	
 	public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
@@ -21,6 +21,7 @@ public class Pez extends Animal{
 		this.setGenero(genero);
 		this.colorEscamas = colorEscamas;
 		this.cantidadAletas = cantidadAletas;
+		listado.add(this);
 	}
 	//metodos get
 	public String getColorEscamas() {
@@ -53,14 +54,12 @@ public class Pez extends Animal{
 	
 	public static Pez crearSalmon(String nombre, int edad, String genero) {
 		Pez salmon = new Pez(nombre, edad, "oceano", genero, "rojo", 6);
-		listado.add(salmon);
 		salmones++;
 		return(salmon);
 	}
 
 	public static Pez crearBacalao(String nombre, int edad, String genero) {
 		Pez bacalao = new Pez(nombre, edad, "oceano", genero, "gris", 6);
-		listado.add(bacalao);
 		bacalaos++;
 		return(bacalao);
 	}
