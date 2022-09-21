@@ -9,6 +9,9 @@ public class Ave extends Animal {
 	private String colorPlumas;
 	
 	//constructor
+	public Ave() {
+		
+	}
 	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
 		this.setNombre(nombre);
 		this.setEdad(edad);
